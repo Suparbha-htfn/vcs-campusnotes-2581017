@@ -1,0 +1,1 @@
+This file verifies the second clone workflow of CampusNotes.
