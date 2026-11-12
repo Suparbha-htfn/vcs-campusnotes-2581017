@@ -12,12 +12,12 @@ function displayNotes() {
     notes.forEach(function(note, index) {
         let noteDiv = document.createElement("div");
         noteDiv.className = "note";
-
         let title = document.createElement("h3");
-        title.textContent = note.title;
-
         let content = document.createElement("p");
+        
+        title.textContent = note.title;
         content.textContent = note.content;
+        
 
         let deleteButton = document.createElement("button");
         deleteButton.textContent = "Delete";
