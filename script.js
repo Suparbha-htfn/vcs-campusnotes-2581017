@@ -4,6 +4,10 @@ let notes = JSON.parse(localStorage.getItem("notes")) || [];
 function displayNotes() {
     let notesList = document.getElementById("notesList");
     notesList.innerHTML = "";
+    if (notes.length === 0) {
+    notesList.innerHTML = "<p>No notes added yet. Start by adding your first note!</p>";
+    return;
+    }
 
     notes.forEach(function(note, index) {
         let noteDiv = document.createElement("div");
