@@ -36,8 +36,8 @@ function displayNotes() {
 }
 
 function addNote() {
-    let title = document.getElementById("noteTitle").value;
-    let content = document.getElementById("noteContent").value;
+    let title = document.getElementById("noteTitle").value.trim();
+    let content = document.getElementById("noteContent").value.trim();
 
     if (title.trim() === "" || content.trim() === "") {
         alert("Please enter both title and content.");
